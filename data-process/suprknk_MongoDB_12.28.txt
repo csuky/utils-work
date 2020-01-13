@@ -1,0 +1,433 @@
+/* 1 */
+{
+    "_id" : ObjectId("5e0742f9cfca3700062f1e41"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "0",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"1\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.95999999999985\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.625\",\"relAirCharge_Cyl\":\"18.421875\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-2.25\",\"preIgnRatio\":\"0.875\",\"engSpd\":\"698.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534201938",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534073700"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5e0742f9cfca3700062f1e44"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "1",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.95999999999985\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.625\",\"relAirCharge_Cyl\":\"18.5859375\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-1.5\",\"preIgnRatio\":\"0.875\",\"engSpd\":\"695.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534201940",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534073800"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5e0742f9cfca3700062f1e42"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "2",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"1\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.95999999999985\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.75\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-3.0\",\"preIgnRatio\":\"1.0\",\"engSpd\":\"704.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534201939",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534073900"
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5e0742f9cfca3700062f1e43"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "3",
+    "payload" : "{\"knkRatio\":\"0.625\",\"relAirCharge_Cyl\":\"18.421875\",\"filtGradtManifPres\":\"0.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_PreIgnDetct\":\"1\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-2.25\",\"preIgnRatio\":\"1.1875\",\"engSpd\":\"697.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534201939",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074000"
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5e074335cfca3700062f1e88"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "3",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"drivingMileage\":\"120.0\",\"ambientTemp\":\"15.659999999999854\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.95999999999985\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\"}",
+    "createTime" : "1577534261870",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074000"
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5e074335cfca3700062f1e89"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "4",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.95999999999985\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.625\",\"relAirCharge_Cyl\":\"18.65625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-1.5\",\"preIgnRatio\":\"1.1875\",\"engSpd\":\"697.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534261870",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074100"
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5e074335cfca3700062f1e8a"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "5",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.95999999999985\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.625\",\"relAirCharge_Cyl\":\"18.75\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-1.5\",\"preIgnRatio\":\"1.1875\",\"engSpd\":\"694.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534261871",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074200"
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5e074335cfca3700062f1e86"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "6",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.95999999999985\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.625\",\"relAirCharge_Cyl\":\"18.515625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-2.25\",\"preIgnRatio\":\"1.1875\",\"engSpd\":\"697.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534261868",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074300"
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5e074335cfca3700062f1e87"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "7",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"filtGradtManifPres\":\"0.0\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"1stPreignNum\":\"120.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.625\",\"relAirCharge_Cyl\":\"18.75\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-2.25\",\"preIgnRatio\":\"1.1875\",\"engSpd\":\"701.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534261869",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074400"
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5e074353cfca3700062f1ec9"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "7",
+    "payload" : "{\"altudCorcFactor\":\"1.015625\",\"drivingMileage\":\"120.0\",\"ambientTemp\":\"15.659999999999854\",\"carSpd\":\"0.0\",\"coolWaterTempDsT\":\"100.95999999999985\",\"relOilPres\":\"0.0\"}",
+    "createTime" : "1577534291854",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074400"
+}
+
+/* 11 */
+{
+    "_id" : ObjectId("5e074353cfca3700062f1ec8"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "8",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"1\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.75\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-3.0\",\"preIgnRatio\":\"1.0625\",\"engSpd\":\"701.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534291853",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074500"
+}
+
+/* 12 */
+{
+    "_id" : ObjectId("5e074353cfca3700062f1ecc"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "9",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.515625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-2.25\",\"preIgnRatio\":\"1.0625\",\"engSpd\":\"699.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534291856",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074600"
+}
+
+/* 13 */
+{
+    "_id" : ObjectId("5e074353cfca3700062f1ecb"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "10",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"1\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.5859375\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-3.0\",\"preIgnRatio\":\"1.0\",\"engSpd\":\"701.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534291855",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074700"
+}
+
+/* 14 */
+{
+    "_id" : ObjectId("5e074353cfca3700062f1eca"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "11",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.75\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-1.5\",\"preIgnRatio\":\"1.0\",\"engSpd\":\"697.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534291855",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074800"
+}
+
+/* 15 */
+{
+    "_id" : ObjectId("5e074371cfca3700062f1f0f"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "11",
+    "payload" : "{\"ambientTemp\":\"15.659999999999854\",\"relOilPres\":\"0.0\"}",
+    "createTime" : "1577534321976",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074800"
+}
+
+/* 16 */
+{
+    "_id" : ObjectId("5e074371cfca3700062f1f0d"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "12",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.515625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-1.5\",\"preIgnRatio\":\"1.0\",\"engSpd\":\"696.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534321975",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534074900"
+}
+
+/* 17 */
+{
+    "_id" : ObjectId("5e074371cfca3700062f1f0b"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "13",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.65625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-1.5\",\"preIgnRatio\":\"1.0\",\"engSpd\":\"694.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534321974",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075000"
+}
+
+/* 18 */
+{
+    "_id" : ObjectId("5e074371cfca3700062f1f0e"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "14",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.890625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-0.75\",\"preIgnRatio\":\"1.0\",\"engSpd\":\"691.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534321976",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075100"
+}
+
+/* 19 */
+{
+    "_id" : ObjectId("5e074371cfca3700062f1f0a"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "15",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.515625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-2.25\",\"preIgnRatio\":\"1.0\",\"engSpd\":\"699.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534321972",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075200"
+}
+
+/* 20 */
+{
+    "_id" : ObjectId("5e074371cfca3700062f1f0c"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "16",
+    "payload" : "{\"knkRatio\":\"0.6875\",\"filtGradtManifPres\":\"0.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_PreIgnDetct\":\"0\",\"c_SuprKnk\":\"0\",\"preIgnRatio\":\"1.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534321974",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075300"
+}
+
+/* 21 */
+{
+    "_id" : ObjectId("5e07438fcfca3700062f1f4e"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "16",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"ambientTemp\":\"15.659999999999854\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"relAirCharge_Cyl\":\"18.65625\",\"drivingMileage\":\"120.0\",\"ignAngle\":\"-2.25\",\"engSpd\":\"702.5\"}",
+    "createTime" : "1577534351895",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075300"
+}
+
+/* 22 */
+{
+    "_id" : ObjectId("5e07438fcfca3700062f1f51"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "17",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"1\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.65625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-3.75\",\"preIgnRatio\":\"0.875\",\"engSpd\":\"707.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534351897",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075400"
+}
+
+/* 23 */
+{
+    "_id" : ObjectId("5e07438fcfca3700062f1f4d"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "18",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"1\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.6875\",\"relAirCharge_Cyl\":\"18.3515625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-3.75\",\"preIgnRatio\":\"1.0\",\"engSpd\":\"707.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534351893",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075500"
+}
+
+/* 24 */
+{
+    "_id" : ObjectId("5e07438fcfca3700062f1f50"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "19",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"1\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"120.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.625\",\"relAirCharge_Cyl\":\"18.515625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-2.25\",\"preIgnRatio\":\"0.875\",\"engSpd\":\"699.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534351896",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075600"
+}
+
+/* 25 */
+{
+    "_id" : ObjectId("5e07438fcfca3700062f1f4f"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "20",
+    "payload" : "{\"knkRatio\":\"0.625\",\"relAirCharge_Cyl\":\"18.5859375\",\"2ndPreignNum\":\"0.0\",\"filtGradtManifPres\":\"0.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_PreIgnDetct\":\"1\",\"c_SuprKnk\":\"1\",\"ignAngle\":\"-3.0\",\"1stPreignNum\":\"121.0\",\"preIgnRatio\":\"0.9375\",\"engSpd\":\"702.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534351895",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075700"
+}
+
+/* 26 */
+{
+    "_id" : ObjectId("5e0743adcfca3700062f1f91"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "20",
+    "payload" : "{\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"drivingMileage\":\"120.0\",\"ambientTemp\":\"15.659999999999854\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\"}",
+    "createTime" : "1577534381715",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075700"
+}
+
+/* 27 */
+{
+    "_id" : ObjectId("5e0743adcfca3700062f1f8f"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "21",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"1\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"121.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.5625\",\"relAirCharge_Cyl\":\"18.3515625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-4.5\",\"preIgnRatio\":\"1.0625\",\"engSpd\":\"704.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534381713",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075800"
+}
+
+/* 28 */
+{
+    "_id" : ObjectId("5e0743adcfca3700062f1f93"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "22",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"1\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"122.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.75\",\"relAirCharge_Cyl\":\"18.1171875\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"1\",\"ignAngle\":\"-4.5\",\"preIgnRatio\":\"0.9375\",\"engSpd\":\"694.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534381717",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534075900"
+}
+
+/* 29 */
+{
+    "_id" : ObjectId("5e0743adcfca3700062f1f92"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "23",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"ambientTemp\":\"15.659999999999854\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"carSpd\":\"0.0\",\"1stPreignNum\":\"122.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.75\",\"relAirCharge_Cyl\":\"18.3515625\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"-100.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-1.5\",\"preIgnRatio\":\"0.9375\",\"engSpd\":\"679.5\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534381716",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534076000"
+}
+
+/* 30 */
+{
+    "_id" : ObjectId("5e0743adcfca3700062f1f90"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "24",
+    "payload" : "{\"2ndPreignNum\":\"0.0\",\"3rdPreignNum\":\"0.0\",\"altudCorcFactor\":\"1.015625\",\"filtGradtManifPres\":\"0.0\",\"c_PreIgnDetct\":\"0\",\"4thPreignNum\":\"0.0\",\"1stPreignNum\":\"122.0\",\"intkAirTemp\":\"24.75\",\"knkRatio\":\"0.75\",\"relAirCharge_Cyl\":\"18.28125\",\"drivingMileage\":\"120.0\",\"engSpdGradt1cycl\":\"0.0\",\"c_SuprKnk\":\"0\",\"ignAngle\":\"-3.75\",\"preIgnRatio\":\"0.9375\",\"engSpd\":\"690.0\",\"c_HSPsecInjectionDyn\":\"1\"}",
+    "createTime" : "1577534381714",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534076100"
+}
+
+/* 31 */
+{
+    "_id" : ObjectId("5e0743cbcfca3700062f1fd1"),
+    "Brand" : "WEY",
+    "st" : "event.suprKnkSrv",
+    "rc" : "24",
+    "payload" : "{\"ambientTemp\":\"15.659999999999854\",\"carSpd\":\"0.0\",\"coolWaterTempDsT\":\"100.85999999999986\",\"relOilPres\":\"0.0\"}",
+    "createTime" : "1577534411903",
+    "OEM" : "GWM",
+    "CarType" : "CHB071",
+    "vin" : "LGWEF7ATEST000003",
+    "ts" : "1577534076100"
+}
