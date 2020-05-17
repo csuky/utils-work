@@ -20,11 +20,12 @@ EVENT_PREFIX = "event."
 FUNCTION_ZH = ['怠速不稳', '加速不良', '起动困难']
 FUNCTION_EN = ['idleUnstable', 'weakAccelerate', 'startDifficult']
 VARIABLE_PREFIX = [EVENT_PREFIX+i+'.' for i in FUNCTION_EN]
-MAX_RC = {
+MAX_RECORD = {
     FUNCTION_EN[0]: 30,
     FUNCTION_EN[1]: 40,
     FUNCTION_EN[2]: 40
 }
+VARIABLE_ATTRIBUTE = ['云端变量名', '数据类型', '物理值上限', '物理值下限']
 
 """Kafka链接信息"""
 HOST = ""
