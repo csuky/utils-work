@@ -29,7 +29,7 @@ LAT = 'lat'
 LON = 'lon'
 GPS_LAT = 39.9088230 #纬度 北京市
 GPS_LON = 116.3974700 #经度
-GPS = {LAT:str(GPS_LAT), LON:str(GPS_LON)}
+GPS = {LAT: str(GPS_LAT), LON: str(GPS_LON)}
 
 lenData = len(testData)
 testOutData = open(testOutDataFile,'w')
