@@ -10,12 +10,17 @@ import time
 import json
 import pandas as pd
 import random
+from kafka import KafkaProducer
+from kafka.errors import KafkaError
 import config
 
 
 class InnerKafkaMessage(object):
-    """初始化对象，传入最大记录数、变量个数、变量名前缀"""
 
+    """类属性：kafka生产者"""
+    # producer = KafkaProducer(bootstrap_servers=config.HOST)
+
+    """初始化对象，传入最大记录数、变量个数、变量名前缀"""
     def __init__(self, record_number, var_num, var_prefix):
         # 定义消息格式中的key名
         self.vin = config.VIN
@@ -26,13 +31,13 @@ class InnerKafkaMessage(object):
         self.oem = config.OEM
         self.brand = config.BRAND
         self.car_type = config.CAR_TYPE
+
         # 初始化记录数、变量个数、变量名前缀
         self.record_number = record_number
         self.cloud_variable_num = var_num
         self.stype_prefix = var_prefix
 
     """根据变量类型和物理上下限，随机生成数据，series为series"""
-
     @staticmethod
     def generate_random_value(series, value_type, up_limit, low_limit):
         if series[value_type].upper() == 'BIT':
@@ -47,8 +52,8 @@ class InnerKafkaMessage(object):
         ecu_data_columns = list(range(self.record_number))
         stype_value = self.stype_prefix + var_attr_data[var_attr[0]]
         ecu_data_indexes = stype_value.tolist()
-        # 索引为云端变量名，列名为rc
-        ecu_data = pd.DataFrame(index=ecu_data_indexes, columns=ecu_data_columns)
+        ecu_data = pd.DataFrame(index=ecu_data_indexes, columns=ecu_data_columns)  # 索引为云端变量名，列名为rc
+
         # 设置不同rc值下的value
         for j in ecu_data_columns:
             ecu_data[ecu_data_columns[j]] = var_attr_data.apply(InnerKafkaMessage.generate_random_value,
@@ -57,8 +62,9 @@ class InnerKafkaMessage(object):
                                                                       var_attr[3]),
                                                                 axis=1).tolist()
         return ecu_data
-
-    def generate_message_value(self, car_info, rc, variable_data, ts):
+    
+    """根据车辆信息、rc、信号数据、时间戳生成kafka的json消息，并发送到对应topic，同时保存本地"""
+    def generate_message_value(self, car_info, ecu_data, ts, save_ile):
         key = [self.vin,
                self.oem,
                self.brand,
@@ -71,31 +77,45 @@ class InnerKafkaMessage(object):
                                     car_info[self.oem], \
                                     car_info[self.brand], \
                                     car_info[self.car_type]
-        stype_list = list(variable_data.index)
-        value_list = []
-        for st in range(len(stype_list)):
-            temp_value = [vin, oem, brand, car_type, stype_list[st], str(variable_data[stype_list[st]]), str(rc),
-                          str(ts)]
-            temp_dict = dict(zip(key, temp_value))
-            # message_json = json.dumps(temp_dict)
-            value_list.append(temp_dict)
-        return value_list
+
+        # 生成一次事件的全部数据（字典列表）
+        counter = 0
+        event_data_list = []  # 一次事件的全部数据
+        for col, var in ecu_data.iteritems():
+            stype_list = list(var.index)
+            for st in range(len(stype_list)):
+                temp_value = [vin, oem, brand, car_type, stype_list[st], str(var[stype_list[st]]), str(col), str(ts)]
+                temp_dict = dict(zip(key, temp_value))
+                json_message = json.dumps(temp_dict).replace(" ", "") + '\n'
+                save_ile.write(json_message)
+                counter += 1
+                # InnerKafkaMessage.producer.send(config.TOPIC, bytes(str(json_message), 'utf-8'))
+                event_data_list.append(temp_dict)
+            ts = ts + 100
+        save_ile.close()
+        print(counter)
+        return event_data_list
 
 
 if __name__ == "__main__":
-    file_path = "./云端信号.xlsx"
-    io = pd.io.excel.ExcelFile(file_path)
+    file_path = "./"
+    variable_input_file = "云端信号.xlsx"
+    test_output_file = "_测试数据.csv"
+    io = pd.io.excel.ExcelFile(file_path+variable_input_file)
     function_num = len(config.FUNCTION_ZH)
     raw_data = [0] * function_num
     car_information = config.CAR_INFO
     car_num = 1  # len(vehicle_info)
+    test_data_file = [0] * function_num
 
     for i in range(function_num):
         raw_data[i] = pd.read_excel(io, sheet_name=config.FUNCTION_ZH[i], skiprows=1)
+        test_data_file[i] = open(file_path+config.FUNCTION_ZH[i]+test_output_file, 'w')
 
     idle_unstable = InnerKafkaMessage(30, raw_data[0].shape[0], config.VARIABLE_PREFIX[0])
     weak_accelerate = InnerKafkaMessage(40, raw_data[1].shape[0], config.VARIABLE_PREFIX[1])
-    start_difficult = InnerKafkaMessage(3, raw_data[2].shape[0], config.VARIABLE_PREFIX[2])
+    start_difficult = InnerKafkaMessage(40, raw_data[2].shape[0], config.VARIABLE_PREFIX[2])
+
     idle_unstable_data = idle_unstable.generate_ecu_data(raw_data[0])
     weak_accelerate_data = weak_accelerate.generate_ecu_data(raw_data[1])
     start_difficult_data = start_difficult.generate_ecu_data(raw_data[2])
@@ -103,9 +123,18 @@ if __name__ == "__main__":
 
     data_list = []
     for n in range(car_num):
-        for fun in range(2, function_num):
-            time_stamp = round(time.time() * 1000)
-            for col, var in ecu_data_list[fun].iteritems():
-                one_group_list = start_difficult.generate_message_value(car_information[n], col, var, time_stamp)
-                data_list.extend(one_group_list)
-                time_stamp = time_stamp + 100
+        # for fun in range(function_num):
+        time_stamp = round(time.time() * 1000)
+        idle_message = idle_unstable.generate_message_value(car_information[n],
+                                                            ecu_data_list[0],
+                                                            time_stamp,
+                                                            test_data_file[0])
+        accelerate_message = weak_accelerate.generate_message_value(car_information[n],
+                                                                    ecu_data_list[1],
+                                                                    time_stamp,
+                                                                    test_data_file[1])
+        start_message = start_difficult.generate_message_value(car_information[n],
+                                                               ecu_data_list[2],
+                                                               time_stamp,
+                                                               test_data_file[2])
+        data_list.extend(start_message)

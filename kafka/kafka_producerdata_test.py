@@ -35,7 +35,7 @@ stepTime = 30000 #时间步长
 stopTime = START_TIME + (lenData - 1) * stepTime
 tsNew = range(START_TIME, stopTime+stepTime, stepTime)
 
-testDataFile = open(testDataFileName,'w')
+testDataFile = open(testDataFileName, 'w')
 
 # Kafka生产者，发送数据
 producer = KafkaProducer(bootstrap_servers=KAFKA_HOST)
