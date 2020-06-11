@@ -11,11 +11,11 @@ import json
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
 
-KAFKA_HOST_DEV = ["101.132.162.30:9093", "47.100.201.156:9093"] # 开发环境Kafka集群
-KAFKA_HOST_PRD = ["120.131.1.153:6667","120.92.18.198:6667","120.131.0.37:6667"] # 生成环境Kafka集群公网IP
-KAFKA_HOST = KAFKA_HOST_PRD
-KAFKA_TOPIC = "GWMCANDATA"
-SLEEP_TIME = 30 # 发送数据时间戳间隔(s)
+KAFKA_HOST_DEV = ["139.196.126.81:9092"] # 开发环境Kafka集群
+#KAFKA_HOST_PRD = ["120.131.1.153:6667","120.92.18.198:6667","120.131.0.37:6667"] # 生成环境Kafka集群公网IP
+KAFKA_HOST = KAFKA_HOST_DEV
+KAFKA_TOPIC = "GWM-CHB071-uaes-topic"
+SLEEP_TIME = 1 # 发送数据时间戳间隔(s)
 
 originalDataFile = r"D:\KY\Code\Utils\utils-work\kafka\powerGuardOrignal.txt" # 原始数据文件
 testOutDataFile = r"D:\KY\Code\Utils\utils-work\kafka\powerGuardDataFile.txt" # 测试数据备份
@@ -35,6 +35,7 @@ lenData = len(testData)
 testOutData = open(testOutDataFile,'w')
 
 # Kafka生产者，发送数据
+producer = KafkaProducer(bootstrap_servers=KAFKA_HOST)
 try:
     for i in range(lenData):
         temp = json.loads(testData[i].rstrip('\n'))
@@ -49,5 +50,5 @@ except KafkaError as e:
     print(e)
 finally:
     producer.close()
-    testOutDataFile.close()
+    testOutData.close()
     print('___Send Over___')
