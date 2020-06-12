@@ -31,11 +31,14 @@
       <find>file_name</find>
       <find>save_ile</find>
       <find>vin</find>
+      <find>data_info</find>
+      <find>topic</find>
     </findStrings>
     <replaceStrings>
       <replace>function_list</replace>
       <replace>max_rolling</replace>
       <replace>save_file</replace>
+      <replace>variable_info</replace>
     </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -154,6 +157,7 @@
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.3295099" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937434" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -223,8 +227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kafka_message.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="78" column="24" lean-forward="true" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        <state relative-caret-position="452">
+          <caret line="195" column="103" lean-forward="true" selection-start-line="195" selection-start-column="103" selection-end-line="195" selection-end-column="103" />
           <folding>
             <element signature="e#213#224#0" expanded="true" />
           </folding>
@@ -233,8 +237,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="80" column="13" lean-forward="true" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
+        <state relative-caret-position="399">
+          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
         </state>
       </provider>
     </entry>

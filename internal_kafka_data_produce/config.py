@@ -40,7 +40,7 @@ FUNCTION_ZH = ['怠速不稳', '加速不良', '起动困难']
 FUNCTION_EN = ['idleUnstable', 'weakAccelerate', 'startDifficult']
 VARIABLE_PREFIX = [EVENT_PREFIX + i + '.' for i in FUNCTION_EN]
 MAX_RECORD = [30, 40, 40]
-VARIABLE_ATTRIBUTE = ['云端变量名', '数据类型', '单位', '物理值上限', '物理值下限']
+VARIABLE_ATTRIBUTE = ['云端变量名', '数据类型', '物理值上限', '物理值下限']
 
 """车辆信息"""
 CAR_INFO = [
@@ -49,34 +49,44 @@ CAR_INFO = [
         OEM: 'GWM',
         BRAND: 'WEY',
         CAR_TYPE: 'CHB071',
-        VERSION: '1'
+        VERSION: '1',
+        LAT: "29.60000",  # 拉萨
+        LON: "91.00000",
+        BEARING: "",
+        SPEED: ""
     },
     {
         VIN: 'GWMTEST0000000002',
         OEM: 'GWM',
         BRAND: 'WEY',
         CAR_TYPE: 'P3011',
-        VERSION: '1'
+        VERSION: '1',
+        LAT: "30.51667",  # 武汉
+        LON: "114.31667",
+        BEARING: "",
+        SPEED: ""
     },
     {
         VIN: 'GWMTEST0000000003',
         OEM: 'GWM',
         BRAND: '哈弗',
         CAR_TYPE: 'H5',
-        VERSION: '1'
+        VERSION: '1',
+        LAT: "36.56667",  # 西宁
+        LON: "101.75000",
+        BEARING: "",
+        SPEED: ""
     },
     {
         VIN: 'GWMTEST0000000004',
         OEM: 'GWM',
         BRAND: '哈弗',
         CAR_TYPE: 'H6',
-        VERSION: '1'
+        VERSION: '1',
+        LAT: "45.75000",  # 哈尔滨
+        LON: "126.63333",
+        BEARING: "",
+        SPEED: ""
     }
 ]
 
-GPS_DATA = {
-    LAT: "100",
-    LON: "35",
-    BEARING: "",
-    SPEED: ""
-}
