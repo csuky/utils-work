@@ -11,7 +11,7 @@ import json
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
 
-KAFKA_HOST_DEV = ["139.196.126.81:9092"] # 开发环境Kafka集群
+KAFKA_HOST_DEV = "139.196.126.81:9092" # 开发环境Kafka集群
 #KAFKA_HOST_PRD = ["120.131.1.153:6667","120.92.18.198:6667","120.131.0.37:6667"] # 生成环境Kafka集群公网IP
 KAFKA_HOST = KAFKA_HOST_DEV
 KAFKA_TOPIC = "GWM-CHB071-uaes-topic"

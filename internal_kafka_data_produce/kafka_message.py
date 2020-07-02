@@ -18,7 +18,7 @@ import config
 class InnerKafkaMessage(object):
 
     """类属性：kafka生产者"""
-    producer = KafkaProducer(bootstrap_servers=config.HOST)
+    # producer = KafkaProducer(bootstrap_servers=config.HOST)
     topic = config.TOPIC
 
     def __init__(self, record_number, var_num, var_prefix):
@@ -68,6 +68,21 @@ class InnerKafkaMessage(object):
             result = random.uniform(low_limit, up_limit)
         return result
 
+    def send_driving_message(self, key, common_info, ts, save_file):
+        # 车速、里程、档位数据
+        driving_var = ['rolling.carSpeed', 'rolling.drivingMileage', 'rolling.gearbox']
+        car_speed = random.uniform(20, 120)
+        driving_mileage = ts/10000000000
+        gearbox = random.randint(0, 2)
+        driving_val = [car_speed, driving_mileage, gearbox]
+
+        for k in range(len(driving_var)):
+            driving_value = common_info + [driving_var[k], driving_val[k], str(10), str(ts), '1']
+            driving_dict = dict(zip(key, driving_value))
+            driving_message = json.dumps(driving_dict).replace(" ", "") + '\n'
+            InnerKafkaMessage.producer.send(InnerKafkaMessage.topic, bytes(str(driving_message), 'utf-8'))
+            save_file.write(driving_message)
+
     def generate_ecu_data(self, var_attr_data):
         """
         根据每个异常事件的变量属性表，生成不同rc下的满足物理范围的随机数据
@@ -101,17 +116,19 @@ class InnerKafkaMessage(object):
                self.oem,
                self.brand,
                self.car_type,
+               self.version,
                self.stype,
                self.value,
                self.rolling_counter,
-               self.time_stamp,
-               self.version]
+               self.time_stamp]
 
         vin = car_info[self.vin]
         oem = car_info[self.oem]
         brand = car_info[self.brand]
         car_type = car_info[self.car_type]
         version = car_info[self.version]
+        common_info = [vin, oem, brand, car_type, version]
+
         ts = round(time.time() * 1000)
 
         gps_key = [self.vin,
@@ -148,22 +165,23 @@ class InnerKafkaMessage(object):
 
         try:
             for col, var in ecu_data.iteritems():
+                InnerKafkaMessage.producer.send(InnerKafkaMessage.topic, bytes(str(gps_json_message), 'utf-8'))
+                self.send_driving_message(key, common_info, ts, save_file)
                 stype_list = list(var.index)
                 for st in range(len(stype_list)):
-                    temp_value = [vin, oem, brand, car_type, stype_list[st], str(var[stype_list[st]]), str(col), str(ts), version]
-                    temp_dict = dict(zip(key, temp_value))
-                    json_message = json.dumps(temp_dict).replace(" ", "") + '\n'
+                    event_value = common_info + [stype_list[st], str(var[stype_list[st]]), str(col), str(ts)]
+                    event_dict = dict(zip(key, event_value))
+                    json_message = json.dumps(event_dict).replace(" ", "") + '\n'
                     save_file.write(json_message)
                     counter += 1
                     InnerKafkaMessage.producer.send(InnerKafkaMessage.topic, bytes(str(json_message), 'utf-8'))
-                    event_data_list.append(temp_dict)
+                    event_data_list.append(event_dict)
                 ts = ts + 100
-            InnerKafkaMessage.producer.send(InnerKafkaMessage.topic, bytes(str(gps_json_message), 'utf-8'))
             time.sleep(1)
         except KafkaError as e:
             print(e)
         finally:
-            save_file.close()
+            # save_file.close()
             print(counter)
             return event_data_list
 
@@ -186,13 +204,16 @@ if __name__ == "__main__":
 
     function_num = len(function_list)
     io = pd.io.excel.ExcelFile(file_path + variable_input_file)
-
-    for n in range(car_num):
-        for i in range(function_num):
-            raw_data = pd.read_excel(io, sheet_name=function_list[i], skiprows=1)
-            file_name = file_path + function_list[i] + test_output_file
-            test_data_file = open(file_name, 'w')
-            kafka_message_instance = InnerKafkaMessage(max_rolling[i], raw_data.shape[0], variable_prefix[i])
-            kafka_message_instance.generate_message_value(car_information[n], raw_data, test_data_file)
+    file_name = file_path + test_output_file
+    # test_data_file = open(file_name, 'w')
+    with open(file_name, 'w') as test_data_file:
+        for n in range(car_num):
+            for i in range(function_num):
+                raw_data = pd.read_excel(io, sheet_name=function_list[i], skiprows=1)
+                # file_name = file_path + function_list[i] + test_output_file
+                # file_name = file_path + test_output_file
+                # test_data_file = open(file_name, 'w')
+                kafka_message_instance = InnerKafkaMessage(max_rolling[i], raw_data.shape[0], variable_prefix[i])
+                kafka_message_instance.generate_message_value(car_information[n], raw_data, test_data_file)
 
 

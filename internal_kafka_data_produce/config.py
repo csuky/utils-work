@@ -14,7 +14,7 @@ TOPIC = "GWM-CHB071-uaes-topic"
 """文件交互"""
 FILE_PATH = "./data_file/"
 VARIABLE_FILE = "云端信号.xlsx"
-OUTPUT_FILE = "_测试数据.txt"
+OUTPUT_FILE = "测试数据.txt"
 
 """消息格式"""
 VIN = "vin"
