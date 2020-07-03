@@ -29,11 +29,11 @@ VERSION = "version"
 EVENT_PREFIX = ""  # ""event."
 
 """GPS"""
+GPS_KEY = "GPS"
 LAT = "lat"
 LON = "long"
 BEARING = "bearing"
 SPEED = "speed"
-GPS_KEY_WORD = "GPS"
 
 """功能信息"""
 FUNCTION_ZH = ['怠速不稳', '加速不良', '起动困难']
@@ -50,10 +50,12 @@ CAR_INFO = [
         BRAND: 'WEY',
         CAR_TYPE: 'CHB071',
         VERSION: '1',
-        LAT: "29.60000",  # 拉萨
-        LON: "91.00000",
-        BEARING: "",
-        SPEED: ""
+        GPS_KEY: {
+            LAT: "29.60000",  # 拉萨
+            LON: "91.00000",
+            BEARING: "",
+            SPEED: ""
+        }
     },
     {
         VIN: 'GWMTEST0000000002',
@@ -61,10 +63,12 @@ CAR_INFO = [
         BRAND: 'WEY',
         CAR_TYPE: 'P3011',
         VERSION: '1',
-        LAT: "30.51667",  # 武汉
-        LON: "114.31667",
-        BEARING: "",
-        SPEED: ""
+        GPS_KEY: {
+            LAT: "30.51667",  # 武汉
+            LON: "114.31667",
+            BEARING: "",
+            SPEED: ""
+        }
     },
     {
         VIN: 'GWMTEST0000000003',
@@ -72,10 +76,12 @@ CAR_INFO = [
         BRAND: '哈弗',
         CAR_TYPE: 'H5',
         VERSION: '1',
-        LAT: "36.56667",  # 西宁
-        LON: "101.75000",
-        BEARING: "",
-        SPEED: ""
+        GPS_KEY: {
+            LAT: "36.56667",  # 西宁
+            LON: "101.75000",
+            BEARING: "",
+            SPEED: ""
+        }
     },
     {
         VIN: 'GWMTEST0000000004',
@@ -83,10 +89,12 @@ CAR_INFO = [
         BRAND: '哈弗',
         CAR_TYPE: 'H6',
         VERSION: '1',
-        LAT: "45.75000",  # 哈尔滨
-        LON: "126.63333",
-        BEARING: "",
-        SPEED: ""
+        GPS_KEY: {
+            LAT: "45.75000",  # 哈尔滨
+            LON: "126.63333",
+            BEARING: "",
+            SPEED: ""
+        }
     }
 ]
 
