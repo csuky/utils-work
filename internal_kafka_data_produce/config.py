@@ -38,8 +38,8 @@ SPEED = "speed"
 """功能信息"""
 FUNCTION_ZH = ['怠速不稳', '加速不良', '起动困难']
 FUNCTION_EN = ['idleUnstable', 'weakAccelerate', 'startDifficult']
-VARIABLE_PREFIX = [EVENT_PREFIX + i + '.' for i in FUNCTION_EN]
 MAX_RECORD = [30, 40, 40]
+VARIABLE_PREFIX = [EVENT_PREFIX + i + '.' for i in FUNCTION_EN]
 VARIABLE_ATTRIBUTE = ['云端变量名', '数据类型', '物理值上限', '物理值下限']
 
 """车辆信息"""
